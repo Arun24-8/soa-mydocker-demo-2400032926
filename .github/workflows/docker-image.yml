@@ -1,3 +1,4 @@
+```yaml
 name: Docker Fullstack
 
 on:
@@ -26,15 +27,16 @@ jobs:
       - name: Build and push backend image
         uses: docker/build-push-action@v5
         with:
-          context: ./RAINHARVESTING-SPRINGBOOT
-          file: ./RAINHARVESTING-SPRINGBOOT/backend.Dockerfile
+          context: ./RainwaterHarvestingUnitProject
+          file: ./RainwaterHarvestingUnitProject/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-frontend-2400032926:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-backend-2400032926:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
-          context: ./RAINHARVESTING-REACT
-          file: ./RAINHARVESTING-REACT/frontend.Dockerfile
+          context: ./RainwaterHarvestingfrontend
+          file: ./RainwaterHarvestingfrontend/frontend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-frontend-2400032926:latest
+```

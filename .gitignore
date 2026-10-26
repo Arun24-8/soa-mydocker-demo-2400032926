@@ -1,0 +1,16 @@
+# IDE and workspace metadata
+.metadata/
+.idea/
+*.iml
+
+# Java/Maven build output
+**/target/
+
+# Node dependencies and build output
+**/node_modules/
+**/dist/
+
+# Local environment files
+.env
+.env.*
+!.env.example

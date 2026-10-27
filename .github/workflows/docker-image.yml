@@ -35,6 +35,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./RainwaterHarvestingfrontend
-          file: ./RainwaterHarvestingfrontend/frontend.Dockerfile
+          file: ./RainwaterHarvestingfrontend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-frontend-2400032926:latest

@@ -17,7 +17,7 @@ services:
     image: arunkumar118/docker-backend-2400032926:latest
     container_name: docker-springboot
     ports:
-      - "9000:2000"
+      - "9000:9000"
     depends_on:
       - postgresdb
     restart: on-failure
